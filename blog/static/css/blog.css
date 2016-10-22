@@ -106,7 +106,22 @@ body {
   filter: saturate(1);
 
 }
-
+.bloggity {
+  padding-top:30px;
+  text-align:center;
+}
+.bloggity h1 a{
+  font-family: 'Sacramento', cursive;
+  font-weight:bold;
+  font-size:50px;
+  color:#55bddd;
+}
+.bloggity h2{
+  color:#A60D10;
+}
+.bloggity p {
+  color:#000;
+}
 
 /*----------------*/
 /*      Button    */
@@ -135,6 +150,13 @@ body {
   text-align: center;
 }
 
+.breaker{
+  background-color: #FBF3DE;
+  margin-top: -14;
+  width: auto;
+  height: 16px;
+
+}
 
 /*-----------------*/
 /*      Media      */
