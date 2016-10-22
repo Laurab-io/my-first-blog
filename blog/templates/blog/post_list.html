@@ -1,2 +1,89 @@
-<h1>What up my glip glops </h1>
-<h1>Keep on Rockin</h1>
+{% load staticfiles %}
+<html>
+    <head>
+        <title>What up Homies</title>
+        <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<!-- GOOGLE FONTS -->
+<link href="https://fonts.googleapis.com/css?family=Bungee+Shade|Sacramento" rel="stylesheet">
+
+<!-- referencing our style.css file -->
+<link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    </head>
+    <body>
+      <main class="main">
+
+<section class="home-hero jumbotron" style="background-image: url('http://www.vogue.com/wp-content/uploads/2015/10/29/01-notorious-rbg.jpg');">
+  <div class="row">
+    <div class="home-hero-info">
+      <h1>Notorious RBG</h1>
+      <h6>Habeas corpus, Bitch.</h6>
+      <p><a class="btn btn-info btn-large">Learn more &raquo;</a></p>
+        <br>
+    </div>
+  </div>
+</section>
+<section class="home-cta container">
+  <div class="row">
+    <div class="col-sm-4">
+      <h2>Justice.</h2>
+      <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+      <p><a class="btn btn-info btn-large" href="#">View details &raquo;</a></p>
+    </div>
+    <div class="col-sm-4">
+      <h2>Fairness.</h2>
+      <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+      <p><a class="btn btn-info btn-large" href="#">View details &raquo;</a></p>
+   </div>
+    <div class="col-sm-4">
+      <h2>Badassery.</h2>
+      <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+      <p><a class="btn btn-info btn-large" href="#">View details &raquo;</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="home-two container">
+  <div class="row">
+    <div class="col-sm-4">
+      <p><button>Pass the Bar</button></p>
+    </div>
+    <div class="col-sm-4">
+      <p><button>All Rise</button></p>
+   </div>
+    <div class="col-sm-4">
+      <p><button>Be Supreme</button></p>
+    </div>
+  </div>
+</section>
+<br>
+<br>
+<section class="homestar jumbotron" style="background-image: url('http://www.motherjones.com/files/rbgmaster.jpg');">
+  <div class="row">
+    <div class="col-md-3">
+  </div>
+  <div class="col-md-6">
+  </div>
+</div class="col-md-3">
+<p>You can't spell <br>'Truth' </p>
+  <h6 class="classy">without RUTH</h6>
+</div>
+  </div>
+</section>
+
+{% for post in posts %}
+          <div>
+              <p>published: {{ post.published_date }}</p>
+              <h1><a href="">{{ post.title }}</a></h1>
+              <p>{{ post.text|linebreaksbr }}</p>
+          </div>
+      {% endfor %}
+  </body>
+</html>

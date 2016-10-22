@@ -1,0 +1,170 @@
+/*------------------*/
+/*      Header      */
+/*------------------*/
+.navbar{
+  margin-bottom: 0px;
+}
+
+/*----------------*/
+/*      Body      */
+/*----------------*/
+
+body {
+     padding-bottom: 40px;
+}
+
+/*----------------*/
+/*      Home      */
+/*----------------*/
+
+/* Home Hero Image */
+.home-hero{
+  height: 350px;
+  background: no-repeat center center;
+  -webkit-filter: hue-rotate(350deg);
+  filter: hue-rotate(350deg);
+}
+
+
+.home-hero-info{
+  margin: 100px 0 0 0;
+}
+.home-hero-info h1{
+  text-align: center;
+  font-family: 'Bungee Shade', cursive;
+  color: #000;
+  font-size: 70px;
+  font-weight:700;
+  color:#A60D10;
+  background: rgba(255,255,255, 0.8);
+}
+
+.home-hero-info h6{
+  font-size: 50px;
+  margin-top: 30px;
+  padding-top:10px;
+  margin-bottom:20px;
+  padding-bottom:10px;
+  text-align: center;
+  font-family: 'Sacramento', cursive;
+  font-weight: 600;
+  background-color: rgba(255,255,255, 0.8);
+  border-radius: 10px;
+}
+
+.home-hero-info p{
+  font-size:30px;
+  margin-top:0px;
+  text-align:center;
+}
+
+/* Home CTA Section */
+.home-cta h2{
+    text-align: center;
+}
+.home-cta p{
+    text-align: justify;
+}
+.home-cta p a{
+    margin: 0 0 0 32%;
+}
+/* home-two container Section */
+.home-two{
+    align-items: center;
+}
+
+/* Homestar Section */
+.homestar {
+  height:350px;
+  background-position: top center;
+  border-radius: 10px;
+  -webkit-filter: saturate(1);
+  filter: saturate(1);
+
+}
+.homestar p{
+  font-family:'Bungee Shade', cursive;
+  font-size:30px;
+  text-align:center;
+  color: #A60D10;
+  background-color: rgba(255,255,255, 0.8);
+  margin-top:0px;
+  -webkit-filter: saturate(0);
+  filter: saturate(0);
+}
+
+.classy {
+  background-color:#A60D10;
+  text-align: center;
+  color:#fff;
+  font-family:'Bungee Shade', cursive;
+  font-size:30px;
+  text-align:center;
+  margin-top:215px;
+  padding:8 0 8 0;
+  -webkit-filter: saturate(1);
+  filter: saturate(1);
+
+}
+
+
+/*----------------*/
+/*      Button    */
+/*----------------*/
+
+.home-two button{
+  background-color: #A60D10;
+  color: white;
+  border-radius: 10px;
+  margin-top:12px;
+  padding: 10 10 10 10;
+  margin: 8 0 8 0;
+  font-family: 'Sacramento', cursive;
+  font-size:30px;
+  transition: 0.3s;
+}
+
+.home-two button:hover{
+  background-color:#fff;
+  color:#A60D10;
+}
+
+.home-two p {
+  background-color: #FBF3DE;
+  border-radius: 10px;
+  text-align: center;
+}
+
+
+/*-----------------*/
+/*      Media      */
+/*-----------------*/
+@media all and (max-width: 400px){
+    /* Hero Image Text */
+    .home-hero-info {
+      margin: 75px 0 0 0;
+  }
+}
+
+/*----------------*/
+/*  Navigation    */
+/*----------------*/
+
+#navmenu {
+ display: block;
+ font-weight:900;
+ background-color: #FBF3DE;
+ color:#000;
+ padding-bottom:20px;
+ position:fixed;
+ width:100%;
+}
+
+#navmenu li{
+  display:inline;
+  margin-left: 44px;
+  font-family:'Helvetica Neue';
+  font-size: 20px;
+  padding-top:10px;
+
+}
