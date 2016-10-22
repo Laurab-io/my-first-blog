@@ -23,6 +23,7 @@ body {
   background: no-repeat center center;
   -webkit-filter: hue-rotate(350deg);
   filter: hue-rotate(350deg);
+
 }
 
 
@@ -158,6 +159,20 @@ body {
 
 }
 
+.rockin{
+  margin-left:50px;
+}
+
+.page-header h1{
+  font-family: 'Sacramento', cursive;
+  font-weight:800;
+  font-size:45px;
+  padding-left: 15px;
+}
+
+.glyphicon{
+  padding-left: 20px;
+}
 /*-----------------*/
 /*      Media      */
 /*-----------------*/
