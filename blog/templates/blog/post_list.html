@@ -1,95 +1,80 @@
+{% extends 'blog/base.html' %}
 {% load staticfiles %}
-<html>
-    <head>
-        <title>What up Homies</title>
-        <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-<!-- GOOGLE FONTS -->
-<link href="https://fonts.googleapis.com/css?family=Bungee+Shade|Sacramento" rel="stylesheet">
-
-<!-- referencing our style.css file -->
-<link rel="stylesheet" href="{% static 'css/blog.css' %}">
-    </head>
-    <body>
-      <main class="main">
+{% block content %}
+<main class="main">
 
 <section class="home-hero jumbotron" style="background-image: url('http://www.vogue.com/wp-content/uploads/2015/10/29/01-notorious-rbg.jpg');">
-  <div class="row">
-    <div class="home-hero-info">
-      <h1>Django Girls!</h1>
-      <h6>Denver, CO</h6>
-      <!-- <p><a class="btn btn-info btn-large">Learn more &raquo;</a></p> -->
-        <br>
-    </div>
-  </div>
+<div class="row">
+<div class="home-hero-info">
+<h1>Django Girls!</h1>
+<h6>Denver, CO</h6>
+<!-- <p><a class="btn btn-info btn-large">Learn more &raquo;</a></p> -->
+  <br>
+</div>
+</div>
 </section>
 <section class="home-cta container">
-  <div class="row">
-    <div class="col-sm-4">
-      <h2>Coding.</h2>
-      <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-      <p><a class="btn btn-info btn-large" href="#">View details &raquo;</a></p>
-    </div>
-    <div class="col-sm-4">
-      <h2>Debugging.</h2>
-      <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-      <p><a class="btn btn-info btn-large" href="#">View details &raquo;</a></p>
-   </div>
-    <div class="col-sm-4">
-      <h2>Badassery.</h2>
-      <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-      <p><a class="btn btn-info btn-large" href="#">View details &raquo;</a></p>
-    </div>
-  </div>
+<div class="row">
+<div class="col-sm-4">
+<h2>Coding.</h2>
+<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+<p><a class="btn btn-info btn-large" href="#">View details &raquo;</a></p>
+</div>
+<div class="col-sm-4">
+<h2>Debugging.</h2>
+<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+<p><a class="btn btn-info btn-large" href="#">View details &raquo;</a></p>
+</div>
+<div class="col-sm-4">
+<h2>Badassery.</h2>
+<p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+<p><a class="btn btn-info btn-large" href="#">View details &raquo;</a></p>
+</div>
+</div>
 </section>
 
 <section class="home-two container">
-  <div class="row">
-    <div class="col-sm-4">
-      <p><button>Code!</button></p>
-    </div>
-    <div class="col-sm-4">
-      <p><button>Git Push</button></p>
-   </div>
-    <div class="col-sm-4">
-      <p><button>Deploy</button></p>
-    </div>
-  </div>
+<div class="row">
+<div class="col-sm-4">
+<p><button>Code!</button></p>
+</div>
+<div class="col-sm-4">
+<p><button>Git Push</button></p>
+</div>
+<div class="col-sm-4">
+<p><button>Deploy</button></p>
+</div>
+</div>
 </section>
 <br>
 <br>
 <section class="homestar jumbotron" style="background-image: url('http://www.motherjones.com/files/rbgmaster.jpg');">
-  <div class="row">
-    <div class="col-md-3">
-  </div>
-  <div class="col-md-6">
-  </div>
+<div class="row">
+<div class="col-md-3">
+</div>
+<div class="col-md-6">
+</div>
 </div class="col-md-3">
 <p>Django is the <br>'best framework' </p>
-  <h6 class="classy"> And Python Rocks!</h6>
+<h6 class="classy"> And Python Rocks!</h6>
 </div>
-  </div>
+</div>
 </section>
 <section class="bloggity">
-  <div class ="breaker"></div>
-  <div>
-      <h1><a href="/">Django Girls Blog</a></h1>
-  </div>
+<div class ="breaker"></div>
+<div class="page-header">
+<a href="/" class="top-menu">
+</div>
+<div>
+<h1><a href="http://www.google.com" target="_blank">Django Girls Blog</a></h1>
+</div>
 
-  {% for post in posts %}
-      <div>
-          <h2><a href="">{{ post.title }}</a></h2>
-          <p>{{ post.text|linebreaksbr }}</p>
-      </div>
-  {% endfor %}
+{% for post in posts %}
+<div>
+    <h2><a href="">{{ post.title }}</a></h2>
+    <p>{{ post.text|linebreaksbr }}</p>
+</div>
+{% endfor %}
 
-    </section>
-  </body>
-</html>
+</section>
+{% endblock %}
