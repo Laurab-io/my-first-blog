@@ -76,26 +76,25 @@ body {
 
 /* Homestar Section */
 .homestar {
-  height:350px;
-  background-position: top center;
+  background-repeat: no-repeat;
   border-radius: 10px;
   -webkit-filter: saturate(1);
   filter: saturate(1);
+  color: #A60D10;
 
 }
 .homestar p{
   font-family:'Bungee Shade', cursive;
-  font-size:30px;
+  font-size:90px;
   text-align:center;
   color: #A60D10;
-  background-color: rgba(255,255,255, 0.8);
+  background-color: rgba(255,255,255, 0.1);
   margin-top:0px;
   -webkit-filter: saturate(0);
   filter: saturate(0);
 }
 
 .classy {
-  background-color:#A60D10;
   text-align: center;
   color:#fff;
   font-family:'Bungee Shade', cursive;
@@ -108,8 +107,8 @@ body {
 
 }
 .bloggity {
-  padding-top:30px;
   text-align:center;
+  margin-top:-79px;
 }
 .bloggity h1 a{
   font-family: 'Sacramento', cursive;
@@ -122,7 +121,27 @@ body {
 }
 .bloggity p {
   color:#000;
+  text-align: center;
 }
+
+
+/*----------------*/
+/* Media Queries  */
+/*----------------*/
+
+@media only screen and (max-device-width: 480px) {
+
+.classy {
+  font-size:60px;
+}
+
+.home-two{
+  font-size:40px;
+}
+
+
+}
+
 
 /*----------------*/
 /*      Button    */
@@ -136,7 +155,7 @@ body {
   padding: 10 10 10 10;
   margin: 8 0 8 0;
   font-family: 'Sacramento', cursive;
-  font-size:30px;
+  font-size:40px;
   transition: 0.3s;
 }
 
@@ -146,7 +165,7 @@ body {
 }
 
 .home-two p {
-  background-color: #FBF3DE;
+  background-color: #448bab;
   border-radius: 10px;
   text-align: center;
 }
@@ -172,6 +191,7 @@ body {
 
 .glyphicon{
   padding-left: 20px;
+  color:#fff;
 }
 /*-----------------*/
 /*      Media      */
